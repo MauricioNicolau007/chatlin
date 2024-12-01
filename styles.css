@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333; /* Cinza escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Necessário para a animação */
+    animation: slide 10s ease-in-out infinite; /* Animação de deslizar */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%); /* Começa fora da tela à esquerda */
+    }
+    50% {
+        transform: translateX(0); /* Move para a posição original */
+    }
+    100% {
+        transform: translateX(100%); /* Sai da tela à direita */
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Efeito de hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 50px 0; /* Espaçamento entre seções */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+}
